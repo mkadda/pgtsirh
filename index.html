@@ -3,528 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>P-GT SIRH | Conseil SIRH, paie, GTA et conseil RH</title>
-<meta name="description" content="Conseil SIRH et RH : aide au choix de logiciel de paie, implémentation paie, GTA et DSN, stabilisation après mise en production, et conseil RH opérationnel. 12 ans d'expérience, de 1 500 à 16 000 salariés.">
+<title>P-GT SIRH | Cabinet de conseil SIRH et RH</title>
+<meta name="description" content="Cabinet de conseil SIRH et RH : aide au choix de solution SIRH, déploiement paie, GTA, planification et gestion administrative, stabilisation après mise en production et conseil RH.">
+<link rel="canonical" href="https://pgtsirh.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="P-GT SIRH | Votre projet SIRH, livré comme une paie : juste et à l'heure">
-<meta property="og:description" content="Aide au choix, implémentation paie et GTA, stabilisation, conseil RH. Un seul interlocuteur avant, pendant et après votre projet.">
+<meta property="og:site_name" content="P-GT SIRH">
+<meta property="og:title" content="P-GT SIRH | Cabinet de conseil SIRH et RH">
+<meta property="og:description" content="Cabinet de conseil SIRH et RH : aide au choix de solution SIRH, déploiement paie, GTA, planification et gestion administrative, stabilisation après mise en production et conseil RH.">
+<meta property="og:url" content="https://pgtsirh.com/">
 <meta property="og:locale" content="fr_FR">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2314243B'/%3E%3Crect x='14' y='38' width='36' height='10' fill='%23F4C84A'/%3E%3Ctext x='32' y='34' font-family='Georgia,serif' font-size='26' font-weight='600' fill='white' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#14243B;--ink-2:#2B3D57;--slate:#5A6A80;--rule:#D8DEE6;--paper:#F5F7FA;--white:#FFFFFF;
-  --mark:#F4C84A;--mark-soft:#FBE9B0;--ok:#2E7D5B;--rh:#3F6B5E;--rh-soft:#E7F0EC;
-  --serif:'Spectral',Georgia,serif;--sans:'IBM Plex Sans',system-ui,sans-serif;--wrap:1180px;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-body{font-family:var(--sans);color:var(--ink);background:var(--white);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--mark);outline-offset:3px;border-radius:2px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
-h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;letter-spacing:-.01em}
-h2{font-size:clamp(32px,4vw,46px);max-width:19ch}
-.lead{color:var(--slate);max-width:56ch}
-.skip{position:absolute;left:-999px;top:8px;background:var(--mark);padding:8px 14px;z-index:100}
-.skip:focus{left:8px}
-
-/* NAV */
-.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{font-family:var(--serif);font-weight:600;font-size:22px;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
-.logo span{display:inline-block;background:var(--mark);padding:0 6px;margin-left:4px;border-radius:2px}
-.nav ul{display:flex;gap:28px;list-style:none;align-items:center}
-.nav ul a{text-decoration:none;font-size:15px;color:var(--ink-2)}
-.nav ul a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
-.btn{display:inline-block;text-decoration:none;font-weight:500;font-size:15px;padding:13px 22px;border-radius:4px;border:1.5px solid var(--ink);transition:background .15s,color .15s}
-.btn-ink{background:var(--ink);color:var(--white)}
-.btn-ink:hover{background:var(--ink-2)}
-.btn-line{color:var(--ink);background:transparent}
-.btn-line:hover{background:var(--paper)}
-.nav ul a.btn{padding:10px 18px;color:var(--white)}
-.nav ul a.btn:hover{color:var(--white);text-decoration:none}
-
-/* HERO */
-.hero{padding:88px 0 80px}
-.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
-.hero h1{font-size:clamp(40px,5vw,64px);max-width:15ch}
-.hero .lead{margin:24px 0 36px;font-size:19px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
-.who{margin-top:40px;font-size:15px;color:var(--slate);max-width:48ch}
-.who strong{color:var(--ink);font-weight:600}
-
-.bulletin{background:var(--white);border:1px solid var(--rule);border-radius:6px;box-shadow:0 30px 60px -30px rgba(20,36,59,.35);font-size:14.5px;overflow:hidden}
-.b-head{display:flex;justify-content:space-between;align-items:flex-start;padding:20px 24px;border-bottom:1px solid var(--rule)}
-.b-head h3{font-size:21px}
-.b-head p{color:var(--slate);font-size:13.5px;margin-top:2px}
-.b-meta{text-align:right;font-size:13px;color:var(--slate);line-height:1.5}
-.b-meta b{color:var(--ink);font-weight:500}
-.bulletin table{width:100%;border-collapse:collapse}
-.bulletin th{text-align:left;font-weight:500;font-size:12.5px;color:var(--slate);background:var(--paper);padding:9px 24px;border-bottom:1px solid var(--rule)}
-.bulletin th:last-child,.bulletin td:last-child{text-align:right}
-.bulletin td{padding:11px 24px;border-bottom:1px dashed var(--rule)}
-.bulletin td.base{color:var(--slate)}
-.check{color:var(--ok);font-weight:600;white-space:nowrap}
-.check::before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:8px;vertical-align:1px}
-.net td{border-bottom:none;padding:16px 24px;font-weight:600;font-size:16px;background:var(--mark-soft)}
-.net td:last-child{font-family:var(--serif);font-size:19px;white-space:nowrap}
-.b-foot{padding:12px 24px;font-size:12.5px;color:var(--slate);border-top:1px solid var(--rule)}
-
-.figures{padding:0 0 96px}
-.figures dl{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink)}
-.figures dl>div{padding:22px 24px 0 0}
-.figures dt{font-family:var(--serif);font-size:40px;font-weight:500;line-height:1}
-.figures dd{color:var(--slate);font-size:15px;margin-top:10px;max-width:24ch}
-
-/* Sections */
-section.block{padding:104px 0}
-.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:56px}
-.tint{background:var(--paper)}
-
-/* Cycle */
-.cycle{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);position:relative}
-.phase{padding:32px 32px 8px 0;position:relative}
-.phase + .phase{padding-left:32px;border-left:1px solid var(--rule)}
-.phase .when{font-family:var(--serif);font-size:15px;color:var(--slate);font-style:italic}
-.phase h3{font-size:28px;margin:4px 0 12px}
-.phase > p{color:var(--ink-2);font-size:16px;margin-bottom:22px;max-width:34ch}
-.phase ul{list-style:none;display:grid;gap:0}
-.phase li{padding:12px 0;border-top:1px dashed var(--rule);font-size:15.5px}
-.phase li b{font-weight:600;display:block;font-size:16px}
-.phase li span{color:var(--slate)}
-.phase.now{background:linear-gradient(var(--mark-soft),var(--mark-soft)) top/100% 6px no-repeat}
-.rescue{margin-top:48px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--ink);color:var(--white);border-radius:6px;padding:28px 32px}
-.rescue h3{font-size:24px}
-.rescue p{color:#C3CCD9;font-size:16px;max-width:60ch}
-.rescue .btn{background:var(--mark);border-color:var(--mark);color:var(--ink);white-space:nowrap}
-
-/* Aide au choix */
-.choice{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start}
-.choice-intro h2{max-width:14ch}
-.choice-intro .lead{margin:22px 0 28px}
-.promise{border-left:4px solid var(--mark);padding:6px 0 6px 20px;margin-bottom:28px}
-.promise p{font-family:var(--serif);font-size:22px;line-height:1.35}
-.promise small{display:block;color:var(--slate);font-size:14.5px;margin-top:8px;font-family:var(--sans)}
-.choice-steps{list-style:none;counter-reset:c;border-top:2px solid var(--ink)}
-.choice-steps li{counter-increment:c;display:grid;grid-template-columns:56px 1fr;gap:4px 18px;padding:22px 0;border-bottom:1px solid var(--rule)}
-.choice-steps li > *{grid-column:2}
-.choice-steps li::before{content:counter(c);grid-column:1;grid-row:1 / span 3;font-family:var(--serif);font-size:30px;line-height:1;color:var(--ink)}
-.choice-steps h3{font-size:21px}
-.choice-steps p{color:var(--ink-2);font-size:15.5px}
-.choice-steps em{font-style:normal;color:var(--slate);display:block;font-size:14.5px;margin-top:4px}
-.barometre{margin-top:28px;background:var(--white);border:1px solid var(--rule);border-radius:6px;padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
-.barometre h3{font-size:20px}
-.barometre p{color:var(--slate);font-size:15px;margin-top:4px}
-
-/* Offers */
-.offers{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
-.offer{border:1px solid var(--rule);border-radius:6px;padding:40px;display:flex;flex-direction:column}
-.offer.main{border:2px solid var(--ink);background:var(--white)}
-.offer.alt{background:var(--paper);border-color:var(--paper)}
-.offer .tag{font-size:14px;color:var(--slate);margin-bottom:10px}
-.offer h3{font-size:30px;margin-bottom:14px}
-.offer p{color:var(--ink-2);max-width:48ch}
-.offer ul{list-style:none;margin:26px 0 32px;display:grid;gap:12px}
-.offer li{padding-left:28px;position:relative}
-.offer li::before{content:'';position:absolute;left:0;top:.62em;width:14px;height:2px;background:var(--ink)}
-.offer .btn{margin-top:auto;align-self:flex-start}
-
-/* RH */
-.rh{background:var(--rh-soft)}
-.rh .sec-head h2{max-width:16ch}
-.rh-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:2px solid var(--rh)}
-.rh-item{padding:28px 28px 28px 0;border-bottom:1px solid #C9DAD3}
-.rh-item:nth-child(3n+2),.rh-item:nth-child(3n){padding-left:28px;border-left:1px solid #C9DAD3}
-.rh-item h3{font-size:22px;margin-bottom:8px}
-.rh-item p{color:var(--ink-2);font-size:15.5px}
-.duo{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--white);border-radius:6px;overflow:hidden;border:1px solid #C9DAD3}
-.duo > div{padding:32px}
-.duo > div + div{border-left:1px solid #C9DAD3}
-.duo .side{font-size:14px;color:var(--slate)}
-.duo h3{font-size:24px;margin:4px 0 10px}
-.duo p{color:var(--ink-2);font-size:15.5px}
-.duo-foot{grid-column:1/-1;background:var(--rh);color:var(--white);padding:22px 32px!important;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-left:none!important}
-.duo-foot p{color:var(--white);font-family:var(--serif);font-size:20px}
-.duo-foot .btn{background:var(--white);border-color:var(--white);color:var(--ink)}
-
-/* Expertise */
-.exp-list{border-top:1px solid var(--rule)}
-.exp-row{display:grid;grid-template-columns:240px 1fr 1.2fr;gap:32px;padding:26px 0;border-bottom:1px solid var(--rule);align-items:baseline}
-.exp-row h3{font-size:24px}
-.exp-row .kind{color:var(--slate);font-size:15px}
-.exp-row p{color:var(--ink-2)}
-.tools{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.tools span{font-size:14.5px;padding:7px 14px;border:1px solid var(--rule);background:var(--white);border-radius:40px}
-.tools span.strong{border-color:var(--ink);font-weight:500}
-.tools .note{border:none;background:none;padding:0 0 0 6px;color:var(--slate);font-size:14px;border-radius:0}
-
-/* Missions */
-.m-table{width:100%;border-collapse:collapse;font-size:16px}
-.m-table th{text-align:left;font-weight:500;font-size:14px;color:var(--slate);padding:0 24px 14px 0;border-bottom:2px solid var(--ink)}
-.m-table td{padding:22px 24px 22px 0;border-bottom:1px solid var(--rule);vertical-align:top}
-.m-table td:first-child{width:26%;font-weight:500}
-.m-table td:first-child small{display:block;font-weight:400;color:var(--slate);font-size:14px;margin-top:2px}
-.m-table td:nth-child(2){width:30%;font-family:var(--serif);font-size:20px;line-height:1.3}
-.m-table td:nth-child(3){color:var(--ink-2)}
-.m-table td:last-child{width:110px;padding-right:0;text-align:right}
-.ph{display:inline-block;font-size:13px;padding:3px 10px;border-radius:20px;background:var(--paper);color:var(--ink-2);white-space:nowrap}
-.ph.p1{background:var(--mark-soft)}.ph.p3{background:var(--rh-soft)}
-
-/* FAQ */
-.faq{max-width:860px}
-.faq details{border-bottom:1px solid var(--rule)}
-.faq summary{cursor:pointer;list-style:none;padding:22px 40px 22px 0;font-family:var(--serif);font-size:21px;position:relative}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:'+';position:absolute;right:4px;top:18px;font-family:var(--sans);font-size:26px;color:var(--slate);transition:transform .2s}
-.faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding:0 0 24px;color:var(--ink-2);max-width:68ch}
-
-/* Contact */
-.contact{background:var(--ink);color:var(--white);padding:110px 0}
-.contact .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center}
-.contact h2{font-size:clamp(36px,4.6vw,56px);max-width:14ch}
-.contact .lead{color:#C3CCD9;margin-top:22px}
-.contact-box{border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:32px}
-.contact-box .btn{background:var(--mark);border-color:var(--mark);color:var(--ink);width:100%;text-align:center;font-size:16px;padding:16px}
-.contact-box .btn:hover{background:#F7D46C}
-.contact-box ul{list-style:none;margin-top:24px;display:grid;gap:12px;font-size:15px;color:#C3CCD9}
-
-footer{background:var(--ink);color:#8B99AD;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
-footer .wrap{display:flex;justify-content:space-between;padding-top:26px;padding-bottom:26px;gap:20px;flex-wrap:wrap}
-footer details summary{cursor:pointer;color:#C3CCD9}
-footer details div{margin-top:12px;max-width:70ch;line-height:1.7}
-
-/* Responsive */
-@media (max-width:1060px){.nav ul{gap:20px}.nav ul a{font-size:14px}}
-@media (max-width:980px){
-  .hero .wrap,.sec-head,.contact .wrap,.choice{grid-template-columns:1fr}
-  .choice{gap:40px}
-  .offers{grid-template-columns:1fr}
-  .exp-row{grid-template-columns:1fr;gap:6px}
-  .figures dl{grid-template-columns:1fr 1fr;row-gap:28px}
-  .cycle{grid-template-columns:1fr}
-  .phase,.phase + .phase{padding:28px 0 8px;border-left:none;border-top:1px solid var(--rule)}
-  .rescue{grid-template-columns:1fr}
-  .rh-grid{grid-template-columns:1fr 1fr}
-  .rh-item,.rh-item:nth-child(3n+2),.rh-item:nth-child(3n){padding:24px 24px 24px 0;border-left:none}
-  .rh-item:nth-child(2n){padding-left:24px;border-left:1px solid #C9DAD3}
-  .duo{grid-template-columns:1fr}
-  .duo > div + div{border-left:none;border-top:1px solid #C9DAD3}
-  .nav ul li.hide-md{display:none}
-}
-@media (max-width:720px){
-  body{font-size:16px}
-  .wrap{padding:0 20px}
-  .nav ul li:not(:last-child){display:none}
-  .hero{padding:56px 0 48px}
-  section.block{padding:72px 0}
-  .offer{padding:28px}
-  .figures dt{font-size:30px}
-  .figures{padding-bottom:64px}
-  .b-head{flex-direction:column;gap:8px}.b-meta{text-align:left}
-  .bulletin td,.bulletin th{padding-left:16px;padding-right:16px}
-  .bulletin td.base,.bulletin th.base{display:none}
-  .rh-grid{grid-template-columns:1fr}
-  .rh-item:nth-child(2n){padding-left:0;border-left:none}
-  .barometre{grid-template-columns:1fr}
-  .m-table thead{display:none}
-  .m-table tr{display:block;border-bottom:1px solid var(--rule);padding:20px 0}
-  .m-table td{display:block;width:auto!important;border:none;padding:0 0 6px;text-align:left!important}
-}
-</style>
+<meta name="theme-color" content="#1D2026">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/instrument-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<a href="#main" class="skip">Aller au contenu</a>
-
-<header class="nav">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="hd">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="P-GT SIRH, accueil">P-GT<span>SIRH</span></a>
+    <a class="logo" href="index.html" aria-label="P-GT SIRH, accueil">P-GT<b>SIRH</b><small>Conseil SIRH et RH</small></a>
     <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="#accompagnement">Accompagnement</a></li>
-        <li><a href="#aide-au-choix">Aide au choix</a></li>
-        <li><a href="#conseil-rh">Conseil RH</a></li>
-        <li class="hide-md"><a href="#missions">Missions</a></li>
-        <li><a href="#contact" class="btn btn-ink">Parler de votre projet</a></li>
+      <input type="checkbox" id="nav-toggle" aria-label="Ouvrir le menu">
+      <label class="burger" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+      <ul class="menu">
+        <li><a href="projets-sirh.html">Projets SIRH</a></li><li><a href="aide-au-choix.html">Aide au choix</a></li><li><a href="conseil-rh.html">Conseil RH</a></li><li><a href="cas-clients.html">Cas clients</a></li><li><a href="cabinet.html">Le cabinet</a></li><li><a class="btn btn-w" href="contact.html">Prendre rendez-vous</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-<main id="main">
-<div id="top"></div>
-
-<section class="hero">
+<main id="contenu">
+<section class="hero dark">
   <div class="wrap">
     <div>
-      <h1>Votre projet SIRH, livré comme une paie&nbsp;: juste et à l'heure.</h1>
-      <p class="lead">Paie, gestion des temps, DSN. Je vous accompagne avant, pendant et après votre projet SIRH, en parlant aussi bien le langage de la DSI que celui des équipes RH.</p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn btn-ink">Prendre 30 minutes ensemble</a>
-        <a href="#accompagnement" class="btn btn-line">Voir l'accompagnement</a>
-      </div>
-      <p class="who"><strong>Mehdi Kadda</strong>, fondateur de P-GT SIRH. Consultant SIRH senior, ancien Responsable SIRH d'un groupe de plus de 10 000 salariés, expert Cegid et HR Access.</p>
+      <h1>Votre projet SIRH, tenu comme un calendrier de paie.</h1>
+      <p class="lead">Paie, gestion des temps, planification, gestion administrative. Du choix de la solution à la stabilisation, nous faisons tenir les échéances jusqu'à des processus RH qui tournent juste.</p>
+      <div class="btns"><a class="btn btn-p" href="contact.html">Prendre rendez-vous</a><a class="btn btn-s" href="#expertises">Nos expertises</a></div>
+      <div class="trust"><div><b>20+</b>projets SIRH menés</div><div><b>1 500 à 16 000</b>salariés par client</div><div><b>Multi-CCN</b>régime général et MSA</div></div>
     </div>
-
-    <figure class="bulletin" aria-label="Exemple de déroulé de projet présenté comme un bulletin de paie">
-      <div class="b-head">
-        <div>
-          <h3>Bulletin de projet</h3>
-          <p>Implémentation paie et GTA</p>
-        </div>
-        <div class="b-meta">Effectif <b>4 800 salariés</b><br>Conventions <b>3 CCN</b></div>
-      </div>
-      <table>
-        <thead><tr><th>Rubrique</th><th class="base">Base</th><th>Statut</th></tr></thead>
-        <tbody>
-          <tr><td>Choix de la solution</td><td class="base">3 éditeurs</td><td><span class="check">Validé</span></td></tr>
-          <tr><td>Cahier des charges</td><td class="base">142 règles</td><td><span class="check">Validé</span></td></tr>
-          <tr><td>Paramétrage paie et temps</td><td class="base">3 CCN</td><td><span class="check">Validé</span></td></tr>
-          <tr><td>Recette et contrôle des écarts</td><td class="base">2 paies parallèles</td><td><span class="check">0 écart</span></td></tr>
-          <tr><td>DSN</td><td class="base">Mensuelle</td><td><span class="check">Conforme</span></td></tr>
-          <tr class="net"><td>Net à livrer</td><td class="base"></td><td>En production</td></tr>
-        </tbody>
-      </table>
-      <figcaption class="b-foot">Exemple illustratif d'un déroulé de projet type.</figcaption>
-    </figure>
+    <figure class="cal" aria-label="Exemple de calendrier de paie cible pendant une mise en production">
+  <div class="cal-h"><b>Mise en production, mois 1</b><span>Calendrier de paie cible</span></div>
+  <div class="days" aria-hidden="true">
+    <div class="dn">Lun</div><div class="dn">Mar</div><div class="dn">Mer</div><div class="dn">Jeu</div><div class="dn">Ven</div><div class="dn">Sam</div><div class="dn">Dim</div>
+    <div class="d o"></div><div class="d o"></div><div class="d">1</div><div class="d">2</div><div class="d">3</div><div class="d">4</div><div class="d">5</div>
+    <div class="d">6</div><div class="d ok">7<em>DSN déposée</em></div><div class="d">8</div><div class="d">9</div><div class="d">10</div><div class="d">11</div><div class="d">12</div>
+    <div class="d e">13<em>Clôture GTA</em></div><div class="d">14</div><div class="d e">15<em>Saisie EVP</em></div><div class="d">16</div><div class="d">17</div><div class="d">18</div><div class="d">19</div>
+    <div class="d e">20<em>Calcul</em></div><div class="d e">21<em>Contrôles</em></div><div class="d">22</div><div class="d">23</div><div class="d k">24<em>Paie validée</em></div><div class="d">25</div><div class="d">26</div>
+    <div class="d">27</div><div class="d ok">28<em>Virement</em></div><div class="d">29</div><div class="d">30</div><div class="d">31</div><div class="d o"></div><div class="d o"></div>
+  </div>
+  <div class="legend"><span><i style="background:#3A3F49"></i>Jalon de traitement</span><span><i style="background:#4152D9"></i>Validation</span><span><i style="background:#2F7A5C"></i>Échéance tenue</span></div>
+</figure>
   </div>
 </section>
 
-<section class="figures" aria-label="En chiffres">
+<section class="sec">
   <div class="wrap">
-    <dl>
-      <div><dt>12 ans</dt><dd>de projets paie, GTA et DSN, en cabinet puis côté client</dd></div>
-      <div><dt>20+</dt><dd>projets pilotés, de 1 500 à 16 000 salariés</dd></div>
-      <div><dt>Multi-CCN</dt><dd>tous secteurs, régime général et MSA</dd></div>
-      <div><dt>SIRH + RH</dt><dd>l'outil et la fonction RH, avec un seul interlocuteur</dd></div>
-    </dl>
+    <div class="sh"><h2>Par où commencer&nbsp;?</h2><p class="lead">Chaque situation demande une réponse différente. Voici les trois raisons pour lesquelles nos clients nous appellent le plus souvent.</p></div>
+    <div class="needs">
+      <div class="need"><h3>Vous devez choisir une solution SIRH</h3><p>Paie, GTA, planification ou gestion administrative : une aide au choix indépendante, fondée sur les retours d'utilisateurs et sur vos cas réels, pas sur des démos commerciales.</p><a class="link" href="aide-au-choix.html">Découvrir l'aide au choix</a></div>
+      <div class="need"><h3>Votre projet SIRH prend du retard</h3><p>Un diagnostic côté DSI et côté RH, puis un plan concret pour reprendre la main jusqu'à la mise en production.</p><a class="link" href="projets-sirh.html#diagnostic">Demander un diagnostic</a></div>
+      <div class="need"><h3>Votre fonction RH doit se structurer</h3><p>Organisation, process, relations sociales : une expertise RRH opérationnelle, en mission, en transition ou à temps partagé.</p><a class="link" href="conseil-rh.html">Voir le conseil RH</a></div>
+    </div>
   </div>
 </section>
 
-<section class="block tint" id="accompagnement">
+<section class="sec paper" id="expertises">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Avant, pendant et après votre projet</h2>
-      <p class="lead">La plupart des difficultés d'un projet SIRH se jouent avant le démarrage ou dans les mois qui suivent la mise en production. J'interviens sur tout le cycle, ou seulement là où vous en avez besoin.</p>
+    <div class="sh"><h2>Trois expertises, un seul interlocuteur</h2><p class="lead">L'outil et la fonction RH avancent ensemble. Nous intervenons sur l'un, sur l'autre, ou sur les deux à la fois.</p></div>
+    <div class="pillars">
+      <article class="pillar"><span class="tag">Avant le projet</span><h3>Aide au choix</h3><p>Choisir sa solution SIRH sur des faits : paie, GTA, planification, GA.</p>
+        <ul><li>Cadrage des besoins DSI et RH</li><li>Présélection et démos sur vos cas</li><li>Appels de référence utilisateurs</li><li>Recommandation argumentée</li></ul>
+        <a class="link" href="aide-au-choix.html">En savoir plus</a></article>
+      <article class="pillar feat"><span class="tag">Cœur de métier</span><h3>Projets SIRH</h3><p>Du cahier des charges à la mise en production, puis la stabilisation.</p>
+        <ul><li>Pilotage et AMOA</li><li>Paie, GTA, planification et GA</li><li>Recette et paies parallèles</li><li>Stabilisation et TMA</li></ul>
+        <a class="link" href="projets-sirh.html">En savoir plus</a></article>
+      <article class="pillar"><span class="tag rh">Fonction RH</span><h3>Conseil RH</h3><p>Des pratiques RH claires, que votre SIRH peut ensuite porter.</p>
+        <ul><li>RRH de transition ou à temps partagé</li><li>Structuration de la fonction RH</li><li>Process et procédures RH</li><li>Relations sociales</li></ul>
+        <a class="link" href="conseil-rh.html">En savoir plus</a></article>
     </div>
+  </div>
+</section>
+
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sh"><h2>Avant, pendant et après votre projet</h2><p class="lead">La plupart des difficultés d'un projet SIRH se jouent avant le démarrage ou dans les mois qui suivent la mise en production. Nous couvrons tout le cycle.</p></div>
     <div class="cycle">
-      <div class="phase">
-        <p class="when">En amont</p>
-        <h3>Préparer et choisir</h3>
-        <p>Partir sur des bases solides, avant d'engager un budget.</p>
-        <ul>
-          <li><b>Diagnostic de l'existant</b><span>Outils, process, irritants des équipes paie</span></li>
-          <li><b>Aide au choix de solution</b><span>Sur des retours d'utilisateurs, pas des démos</span></li>
-          <li><b>Cahier des charges et consultation</b><span>Rédaction, analyse des réponses éditeurs</span></li>
-          <li><b>Cadrage du projet</b><span>Périmètre, planning, budget, gouvernance</span></li>
-        </ul>
-      </div>
-      <div class="phase now">
-        <p class="when">Pendant le projet</p>
-        <h3>Construire et livrer</h3>
-        <p>Tenir le planning et arriver à une première paie juste.</p>
-        <ul>
-          <li><b>Pilotage et AMOA</b><span>Coordination DSI, RH, éditeur et intégrateur</span></li>
-          <li><b>Paramétrage paie, GTA et DSN</b><span>Conventions collectives, interfaces, reprise de données</span></li>
-          <li><b>Recette et paies parallèles</b><span>Contrôle des écarts jusqu'à zéro</span></li>
-          <li><b>Conduite du changement</b><span>Formation et accompagnement des équipes</span></li>
-        </ul>
-      </div>
-      <div class="phase">
-        <p class="when">Après la mise en production</p>
-        <h3>Stabiliser et faire vivre</h3>
-        <p>Sécuriser les premières paies, puis faire évoluer l'outil.</p>
-        <ul>
-          <li><b>Stabilisation post-démarrage</b><span>Correction des anomalies, calendrier de paie</span></li>
-          <li><b>TMA et évolutions légales</b><span>Maintenance, nouvelles CCN, nouvelles sociétés</span></li>
-          <li><b>Audit de l'outil en place</b><span>Conformité, paramétrage, optimisation</span></li>
-          <li><b>Transfert de compétences</b><span>Manuels, formation, autonomie des équipes</span></li>
-        </ul>
-      </div>
+      <div class="phase"><p class="when">En amont</p><h3>Préparer et choisir</h3><ul><li>Diagnostic de l'existant<span>Outils, process, irritants des équipes</span></li><li>Aide au choix de solution<span>Fondée sur des retours d'utilisateurs</span></li><li>Cahier des charges<span>Rédaction et analyse des réponses éditeurs</span></li><li>Cadrage<span>Périmètre, planning, budget, gouvernance</span></li></ul></div>
+      <div class="phase now"><p class="when">Pendant le projet</p><h3>Construire et livrer</h3><ul><li>Pilotage et AMOA<span>DSI, RH, éditeur et intégrateur alignés</span></li><li>Paramétrage paie, GTA, planification et GA<span>Conventions, interfaces, reprise de données</span></li><li>Recette et paies parallèles<span>Contrôle des écarts jusqu'à zéro</span></li><li>Conduite du changement<span>Formation et accompagnement des équipes</span></li></ul></div>
+      <div class="phase"><p class="when">Après la mise en production</p><h3>Stabiliser et faire vivre</h3><ul><li>Stabilisation<span>Premières paies, anomalies, calendrier</span></li><li>TMA et évolutions légales<span>Nouvelles conventions, nouvelles sociétés</span></li><li>Audit de l'outil en place<span>Conformité et optimisation du paramétrage</span></li><li>Transfert de compétences<span>Manuels, formation, autonomie</span></li></ul></div>
     </div>
-    <div class="rescue">
-      <h3>Projet en difficulté&nbsp;?</h3>
-      <p>Retard, budget qui dérape, DSI et RH qui ne se comprennent plus. J'ai déjà repris des projets en cours de route, au point d'intégrer les équipes pour les mener jusqu'à la mise en production.</p>
-      <a href="#offres" class="btn">Voir le diagnostic</a>
-    </div>
+    <div class="rescue"><h3>Projet en difficulté&nbsp;?</h3><p>Retard, budget qui dérape, DSI et RH qui ne se comprennent plus : nous reprenons des projets en cours de route, jusqu'à la mise en production.</p><a class="btn btn-w" href="projets-sirh.html#diagnostic">Le diagnostic</a></div>
   </div>
 </section>
 
-<section class="block" id="aide-au-choix">
-  <div class="wrap choice">
-    <div class="choice-intro">
-      <h2>Choisir son logiciel de paie sur des faits</h2>
-      <p class="lead">Un logiciel de paie vous engage pour de longues années. Les démos sont toujours parfaites : ce qui compte, c'est ce que vivent les équipes qui l'utilisent tous les jours.</p>
-      <div class="promise">
-        <p>Je ne suis rémunéré par aucun éditeur. Ma seule mission est que votre choix tienne dans la durée.</p>
-        <small>Une recommandation fondée sur les retours d'utilisateurs, sur votre contexte et sur 12 ans de terrain.</small>
-      </div>
-      <a href="#contact" class="btn btn-ink">Parler de votre choix d'outil</a>
-      <div class="barometre">
-        <div>
-          <h3>Baromètre des logiciels de paie 2026</h3>
-          <p>Une enquête indépendante auprès des DRH, responsables paie et équipes SIRH. Résultats en décembre.</p>
-        </div>
-        <a href="#contact" class="btn btn-line">Recevoir les résultats</a>
-      </div>
-    </div>
-    <ol class="choice-steps">
-      <li><h3>Cadrage de vos besoins</h3><p>Ateliers avec la DRH, la paie et la DSI : conventions collectives, volumétrie, interfaces, budget.</p></li>
-      <li><h3>Présélection de 3 ou 4 solutions</h3><p>En fonction de votre taille, de votre secteur et de vos contraintes.</p><em>Appuyée sur les retours du baromètre pour des entreprises comparables.</em></li>
-      <li><h3>Démos sur vos cas réels</h3><p>Les éditeurs déroulent vos scénarios, pas leur démo standard.</p><em>Les irritants remontés par les utilisateurs deviennent des tests.</em></li>
-      <li><h3>Échanges avec des utilisateurs</h3><p>Des appels de référence avec des entreprises qui utilisent chaque solution.</p></li>
-      <li><h3>Recommandation argumentée</h3><p>Grille de notation, coût total sur 5 ans, risques et planning de mise en œuvre.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="block tint" id="offres">
+<section class="sec">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Deux formats courts pour aller vite</h2>
-      <p class="lead">En plus des missions d'accompagnement, deux offres pour les situations les plus fréquentes.</p>
+    <div class="sh"><h2>Ils nous ont confié leurs projets</h2><p class="lead">Santé, aérien, distribution, agriculture, restauration : des contextes exigeants, des conventions collectives multiples, des organisations du temps complexes.</p></div>
+    <div class="cases compact">
+      <article class="case">
+  <div class="meta"><div class="sector">Groupe médico-social</div><div class="size" style="margin:0">16 000 salariés, multi-conventions</div></div>
+  <div><h3>Déploiement de la convention Syntec sur HR Access</h3><p>Analyse fonctionnelle, spécifications, recette, refonte du calendrier de paie cible et coordination entre DSI, équipes paie et contrôle de gestion.</p></div>
+  <div><span class="chip p">Pendant le projet</span></div>
+</article><article class="case">
+  <div class="meta"><div class="sector">Handling aéroportuaire</div><div class="size" style="margin:0">Multi-sites, horaires atypiques</div></div>
+  <div><h3>Implémentation complète de Cegid HRU</h3><p>Paramétrage paie et GTA, interfaces, reprise de données, recette et formation des équipes, de bout en bout.</p></div>
+  <div><span class="chip p">Pendant le projet</span></div>
+</article><article class="case">
+  <div class="meta"><div class="sector">Compagnie aérienne</div><div class="size" style="margin:0">Personnels navigants PNC et PNT</div></div>
+  <div><h3>Interface entre planification et paie</h3><p>Rédaction du cahier des charges et pilotage de la mise en place d'une interface automatisant la remontée des éléments variables.</p></div>
+  <div><span class="chip a">En amont</span><span class="chip p">Pendant le projet</span></div>
+</article>
     </div>
-    <div class="offers">
-      <article class="offer main">
-        <p class="tag">Audit</p>
-        <h3>Diagnostic de projet SIRH</h3>
-        <p>Votre projet prend du retard ou votre outil ne donne pas satisfaction ? Un bilan complet, côté DSI et côté RH, pour savoir où ça bloque et comment repartir.</p>
-        <ul>
-          <li>Analyse de l'existant, technique et fonctionnelle</li>
-          <li>Identification des points de blocage</li>
-          <li>Plan de remédiation priorisé</li>
-          <li>Restitution au comité de pilotage</li>
-        </ul>
-        <a href="#contact" class="btn btn-ink">Demander un diagnostic</a>
-      </article>
-      <article class="offer alt">
-        <p class="tag">Programme de 6 semaines, en groupe</p>
-        <h3>RH et pilotage de projet</h3>
-        <p>Pour les équipes RH qui démarrent une implémentation sans expérience projet.</p>
-        <ul>
-          <li>Comprendre comment travaille la DSI</li>
-          <li>Structurer et défendre ses besoins</li>
-          <li>Piloter les recettes et les livraisons</li>
-          <li>Gérer les escalades et les arbitrages</li>
-        </ul>
-        <a href="#contact" class="btn btn-line">En savoir plus</a>
-      </article>
-    </div>
+    <p style="margin-top:32px"><a class="link" href="cas-clients.html">Voir tous les cas clients</a></p>
   </div>
 </section>
 
-<section class="block rh" id="conseil-rh">
+<section class="sec-sm paper">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Le conseil RH, pour que l'outil serve vraiment vos équipes</h2>
-      <p class="lead">Un bon SIRH ne corrige pas des process RH flous. Nous disposons en interne d'une expertise RRH confirmée, pour intervenir aussi sur la fonction RH elle-même.</p>
-    </div>
-    <div class="rh-grid">
-      <div class="rh-item"><h3>RRH de transition ou à temps partagé</h3><p>Un départ, une absence, une croissance rapide : une expertise RRH opérationnelle immédiatement.</p></div>
-      <div class="rh-item"><h3>Structuration de la fonction RH</h3><p>Organisation, process, outils et indicateurs, adaptés à votre taille et à votre croissance.</p></div>
-      <div class="rh-item"><h3>Process et procédures RH</h3><p>Recrutement, intégration, entretiens, départs : des règles claires, prêtes à être reprises dans votre SIRH.</p></div>
-      <div class="rh-item"><h3>Relations sociales</h3><p>Préparation et suivi du dialogue social, accompagnement de la direction face au CSE.</p></div>
-      <div class="rh-item"><h3>Conformité sociale</h3><p>Audit des pratiques RH, obligations légales et conventionnelles, plan de mise en conformité.</p></div>
-      <div class="rh-item"><h3>Accompagnement des managers</h3><p>Outils et appui au quotidien pour les managers, notamment pendant un changement d'organisation ou d'outil.</p></div>
-    </div>
-    <div class="duo">
-      <div><p class="side">Pôle SIRH</p><h3>L'outil</h3><p>Choix, paramétrage, paie, gestion des temps, DSN, interfaces.</p></div>
-      <div><p class="side">Pôle conseil RH</p><h3>La fonction RH</h3><p>Organisation, process, pratiques managériales, relations sociales.</p></div>
-      <div class="duo-foot"><p>Ensemble : un projet SIRH où l'outil et les pratiques RH avancent au même rythme.</p><a href="#contact" class="btn">Nous présenter votre besoin</a></div>
+    <div class="figs">
+      <div class="fig"><b>20+</b><span>projets SIRH menés de bout en bout</span></div>
+      <div class="fig"><b>16 000</b><span>salariés pour notre plus grand client</span></div>
+      <div class="fig"><b>12 ans</b><span>d'expérience en paie, GTA et planification</span></div>
+      <div class="fig"><b>0</b><span>commission perçue auprès des éditeurs</span></div>
     </div>
   </div>
 </section>
 
-<section class="block" id="expertise">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>L'expertise SIRH</h2>
-      <p class="lead">De la rédaction du besoin au paramétrage, sans perte d'information entre les étapes.</p>
+<section class="sec" id="barometre">
+  <div class="wrap baro">
+    <div>
+      <span class="kicker">Étude indépendante</span>
+      <h2>Baromètre des logiciels de paie 2026</h2>
+      <p class="lead" style="margin:20px 0 32px">Nous interrogeons DRH, responsables paie et équipes SIRH sur leur outil au quotidien : satisfaction, irritants, conseils à ceux qui vont choisir. Les résultats sortent en décembre.</p>
+      <div class="btns"><a class="btn btn-p" href="aide-au-choix.html#barometre">Participer ou recevoir les résultats</a></div>
     </div>
-    <div class="exp-list">
-      <div class="exp-row"><h3>AMOA</h3><span class="kind">Côté métier</span><p>Recueil des besoins, cahiers des charges, animation des ateliers, conduite du changement.</p></div>
-      <div class="exp-row"><h3>AMOE</h3><span class="kind">Côté solution</span><p>Paramétrage paie, GTA, gestion administrative et DSN. Interfaces, reprise de données, TMA.</p></div>
-      <div class="exp-row"><h3>Pilotage</h3><span class="kind">Chef de projet</span><p>Coordination DSI et RH, planning, budget, comités de pilotage, calendrier de paie cible.</p></div>
-      <div class="exp-row"><h3>Paie et DSN</h3><span class="kind">Réglementaire</span><p>Régime général et MSA, multi-CCN, DSN, participation et intéressement.</p></div>
-    </div>
-    <div class="tools" aria-label="Solutions maîtrisées">
-      <span class="strong">Cegid RHPI</span><span class="strong">Cegid HR Ultimate</span><span class="strong">HR Access</span><span>Paie</span><span>GTA</span><span>Planification</span><span>DSN</span><span>MSA</span>
-      <span class="note">AMOA possible sur tout outil SIRH</span>
-    </div>
-  </div>
-</section>
-
-<section class="block tint" id="missions">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Quelques missions récentes</h2>
-      <p class="lead">Des contextes variés, à chaque étape du cycle de vie d'un SIRH.</p>
-    </div>
-    <table class="m-table">
-      <thead><tr><th>Client</th><th>Mission</th><th>Ce que j'ai fait</th><th>Étape</th></tr></thead>
-      <tbody>
-        <tr><td>Groupe médico-social<small>16 000 salariés</small></td><td>BA SIRH, CCN Syntec sur HR Access</td><td>Déploiement de la convention collective, refonte du calendrier de paie, coordination DSI et équipes paie.</td><td><span class="ph">Pendant</span></td></tr>
-        <tr><td>Handling aéroportuaire</td><td>Implémentation complète Cegid HRU</td><td>Paramétrage, interfaces, reprise de données et formation des équipes, de bout en bout.</td><td><span class="ph">Pendant</span></td></tr>
-        <tr><td>Compagnie aérienne<small>PNC et PNT</small></td><td>Interface planification vers paie</td><td>Cahier des charges et pilotage d'une interface qui automatise la remontée des éléments variables.</td><td><span class="ph p1">En amont</span></td></tr>
-        <tr><td>Coopérative agricole<small>10 000+ salariés</small></td><td>TMA et intégration de sociétés</td><td>Maintenance du SIRH et intégration de nouvelles entités avec leurs conventions collectives.</td><td><span class="ph p3">Après</span></td></tr>
-        <tr><td>Retail et mode<small>3 enseignes</small></td><td>Stabilisation Cegid HRU</td><td>Remise en conformité d'un outil mal implémenté et montée en compétence des nouvelles équipes.</td><td><span class="ph p3">Après</span></td></tr>
-        <tr><td>Restauration rapide<small>Multi-sites</small></td><td>Reprise d'un projet en difficulté</td><td>Stabilisation de la planification et correction des interfaces avec la paie.</td><td><span class="ph p3">Après</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="block" id="questions">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Questions fréquentes</h2>
-    </div>
-    <div class="faq">
-      <details><summary>Intervenez-vous sur tous les logiciels de paie&nbsp;?</summary><p>Oui en AMOA : recueil des besoins, pilotage, recette et conduite du changement se font sur n'importe quel outil. Mon expertise de paramétrage est la plus poussée sur Cegid (RHPI et HR Ultimate) et HR Access.</p></details>
-      <details><summary>Êtes-vous lié à un éditeur&nbsp;?</summary><p>Non. Je ne perçois aucune commission d'éditeur de paie. C'est ce qui permet une aide au choix réellement indépendante.</p></details>
-      <details><summary>Peut-on vous confier seulement une partie du projet&nbsp;?</summary><p>Oui. Beaucoup de missions portent sur une seule étape : le choix de l'outil, la recette, la stabilisation après le démarrage ou la reprise d'un projet en difficulté.</p></details>
-      <details><summary>Comment fonctionnent ensemble le pôle SIRH et le pôle RH&nbsp;?</summary><p>Chaque pôle peut intervenir seul. Sur un projet SIRH, nous pouvons aussi intervenir ensemble : l'un sur l'outil, l'autre sur les process et l'organisation RH, avec un pilotage commun.</p></details>
-      <details><summary>Où intervenez-vous&nbsp;?</summary><p>Depuis l'Île-de-France, sur site ou à distance, partout en France.</p></details>
+    <div class="baro-card" aria-hidden="true">
+      <div class="bar"><span>Fiabilité des calculs</span><i style="--w:78%"></i></div>
+      <div class="bar"><span>Conformité DSN</span><i style="--w:64%"></i></div>
+      <div class="bar"><span>Mises à jour légales</span><i style="--w:52%"></i></div>
+      <div class="bar"><span>Support éditeur</span><i style="--w:41%"></i></div>
+      <small>Illustration. Les résultats réels seront publiés en décembre 2026.</small>
     </div>
   </div>
 </section>
-
-<section class="contact" id="contact">
+<section class="cta dark">
   <div class="wrap">
     <div>
-      <h2>Un projet en cours ou à venir&nbsp;?</h2>
-      <p class="lead">Prenons 30 minutes pour en parler. Nous vous dirons honnêtement si nous pouvons vous aider, et comment.</p>
+      <h2>Parlons de votre projet</h2>
+      <p class="lead">Trente minutes pour comprendre votre contexte. Nous vous dirons franchement si nous pouvons vous aider, et comment.</p>
     </div>
-    <div class="contact-box">
-      <a class="btn" href="mailto:contact@pgtsirh.com?subject=Projet%20SIRH%20-%20prise%20de%20contact">Écrire à contact@pgtsirh.com</a>
-      <ul>
-        <li>Aide au choix, projet SIRH, stabilisation ou conseil RH</li>
-        <li>Île-de-France, sur site ou à distance partout en France</li>
-      </ul>
+    <div class="cta-box">
+      <a class="btn btn-p" href="contact.html">Prendre rendez-vous</a>
+      <ul><li>Premier échange offert, sans engagement</li><li>Aide au choix, projet SIRH, stabilisation ou conseil RH</li><li>Sur site en Île-de-France ou à distance</li></ul>
     </div>
   </div>
 </section>
-
 </main>
-
-<footer>
+<footer class="ft">
   <div class="wrap">
-    <span>P-GT SIRH, conseil SIRH et RH · © 2026</span>
-    <details>
-      <summary>Mentions légales</summary>
+    <div class="top">
       <div>
-        Éditeur : P-GT SIRH, SASU au capital de 1 000 €, RCS Bobigny 902 139 765, siège social 5 avenue Centrale, 93220 Gagny. Contact : contact@pgtsirh.com.<br>
-        Directeur de la publication : Mehdi Kadda.<br>
-        Hébergement : GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.<br>
-        Ce site n'utilise aucun cookie de mesure d'audience ou publicitaire, et ne collecte aucune donnée via formulaire. Les échanges par email sont utilisés uniquement pour répondre à votre demande.
+        <a class="logo" href="index.html">P-GT<b>SIRH</b></a>
+        <p>Cabinet de conseil SIRH et RH. Aide au choix, déploiement paie, GTA, planification et GA, stabilisation et conseil RH.</p>
       </div>
-    </details>
+      <div>
+        <h4>Expertises</h4>
+        <ul><li><a href="projets-sirh.html">Projets SIRH</a></li><li><a href="aide-au-choix.html">Aide au choix</a></li><li><a href="conseil-rh.html">Conseil RH</a></li><li><a href="projets-sirh.html#diagnostic">Diagnostic de projet</a></li></ul>
+      </div>
+      <div>
+        <h4>Cabinet</h4>
+        <ul><li><a href="cas-clients.html">Cas clients</a></li><li><a href="cabinet.html">Le cabinet</a></li><li><a href="aide-au-choix.html#barometre">Baromètre paie 2026</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="mailto:contact@pgtsirh.com">contact@pgtsirh.com</a></li><li>Île-de-France</li><li>Interventions partout en France</li><li><a href="contact.html">Prendre rendez-vous</a></li></ul>
+      </div>
+    </div>
+    <div class="bot"><span>© 2026 P-GT SIRH. Tous droits réservés.</span><a href="mentions-legales.html">Mentions légales</a></div>
   </div>
 </footer>
-
 </body>
 </html>
