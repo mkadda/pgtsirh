@@ -333,3 +333,8 @@ p{max-width:68ch}
 .annonce a{color:#fff;font-weight:600;white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
 @media (max-width:1240px){.menu{gap:20px}.menu a{font-size:14.5px}}
 @media (max-width:640px){.annonce{font-size:13px}.annonce .wrap{gap:10px}}
+/* Menu à 7 entrées */
+.menu a{white-space:nowrap}
+@media (max-width:1380px) and (min-width:981px){.logo small{display:none}.menu{gap:20px}.menu a{font-size:14.5px}}
+@media (max-width:1180px) and (min-width:981px){.menu{gap:16px}.menu a{font-size:14px}.menu .btn{padding:10px 14px;font-size:14px}}
+.dark .steps p{color:#B4B9C3}.dark .steps em{color:#AFB8FF}.dark .steps li{border-color:rgba(255,255,255,.18)}
