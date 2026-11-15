@@ -338,3 +338,10 @@ p{max-width:68ch}
 @media (max-width:1380px) and (min-width:981px){.logo small{display:none}.menu{gap:20px}.menu a{font-size:14.5px}}
 @media (max-width:1180px) and (min-width:981px){.menu{gap:16px}.menu a{font-size:14px}.menu .btn{padding:10px 14px;font-size:14px}}
 .dark .steps p{color:#B4B9C3}.dark .steps em{color:#AFB8FF}.dark .steps li{border-color:rgba(255,255,255,.18)}
+
+/* Quatre expertises */
+.pillars.four{grid-template-columns:repeat(4,1fr);gap:16px}
+.pillars.four .pillar{padding:28px}
+.pillars.four .pillar h3{font-size:23px}
+@media (max-width:1100px){.pillars.four{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.pillars.four{grid-template-columns:1fr}}
